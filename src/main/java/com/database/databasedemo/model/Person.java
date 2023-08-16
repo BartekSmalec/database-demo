@@ -1,8 +1,14 @@
 package com.database.databasedemo.model;
 
+import jakarta.persistence.*;
+
 import java.util.Date;
 
+@Entity
+@NamedQuery(name = "find_all_persons", query = "select p from Person p")
 public class Person {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
     private String name;
     private String location;
