@@ -16,4 +16,7 @@ values(1002,'James','New York', CURRENT_TIMESTAMP());
 INSERT INTO PERSON
 (id,name,location,birth_date)
 values(1003,'Peter','Amsterdam', CURRENT_TIMESTAMP());
+INSERT INTO PERSON
+(id,name,location,birth_date)
+values(1004,'Tomek','Krakow', CURRENT_TIMESTAMP());
 
